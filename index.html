@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOIRE - Avant-Garde Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="logo" onclick="showPage('home')">NOIRE</a>
+        <ul class="nav-links">
+            <li><a href="#" onclick="showPage('home')">Home</a></li>
+            <li><a href="#" onclick="showPage('shop')">Shop</a></li>
+            <li><a href="#" onclick="showPage('about')">About</a></li>
+            <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+        </ul>
+        <div class="nav-icons">
+            <span class="nav-icon">🔍</span>
+            <span class="nav-icon">👤</span>
+            <span class="nav-icon">🛒</span>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1920&q=80" alt="Fashion Hero" class="hero-bg">
+            <div class="hero-content">
+                <p class="hero-subtitle">Spring/Summer 2026</p>
+                <h1 class="hero-title">ELEGANCE<br>REDEFINED</h1>
+                <p class="hero-description">Discover our curated collection of avant-garde fashion pieces that transcend time and trend</p>
+                <a href="#" class="cta-button" onclick="showPage('shop')">Explore Collection</a>
+            </div>
+        </section>
+
+        <!-- Featured Collections -->
+        <section class="featured">
+            <div class="section-header">
+                <p class="section-subtitle">Curated Collections</p>
+                <h2 class="section-title">Featured This Season</h2>
+            </div>
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800&q=80" alt="Women's Collection" class="collection-image">
+                    <div class="collection-overlay">
+                        <h3 class="collection-name">Women's</h3>
+                        <p class="collection-description">Sophisticated elegance meets contemporary design</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=800&q=80" alt="Men's Collection" class="collection-image">
+                    <div class="collection-overlay">
+                        <h3 class="collection-name">Men's</h3>
+                        <p class="collection-description">Timeless pieces for the modern gentleman</p>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80" alt="Accessories Collection" class="collection-image">
+                    <div class="collection-overlay">
+                        <h3 class="collection-name">Accessories</h3>
+                        <p class="collection-description">Finishing touches that complete your look</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- SHOP PAGE -->
+    <div id="shop" class="page">
+        <div class="shop-header">
+            <h1 class="shop-title">Shop Collection</h1>
+            <p>Discover pieces that define your unique style</p>
+        </div>
+        <div class="shop-container">
+            <div class="filter-bar">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">New Arrivals</button>
+                <button class="filter-btn">Women</button>
+                <button class="filter-btn">Men</button>
+                <button class="filter-btn">Accessories</button>
+                <button class="filter-btn">Sale</button>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">New</span>
+                        <img src="https://images.unsplash.com/photo-1539533018447-63fcce2678e3?w=600&q=80" alt="Silk Blazer" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&q=80" alt="Silk Blazer Back" class="product-image-hover">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Silk Tailored Blazer</h3>
+                        <p class="product-category">Women's Outerwear</p>
+                        <p class="product-price">$495</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1542272604-787c3835535d?w=600&q=80" alt="Cashmere Coat" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591369822096-ffd140ec948f?w=600&q=80" alt="Cashmere Coat Detail" class="product-image-hover">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Cashmere Overcoat</h3>
+                        <p class="product-category">Men's Outerwear</p>
+                        <p class="product-price">$890</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">Bestseller</span>
+                        <img src="https://images.unsplash.com/photo-1596783074918-c84cb06531ca?w=600&q=80" alt="Leather Dress" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&q=80" alt="Leather Dress Back" class="product-image-hover">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Leather Midi Dress</h3>
+                        <p class="product-category">Women's Dresses</p>
+                        <p class="product-price">$675</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1598532163257-ae3c6b2524b6?w=600&q=80" alt="Wool Suit" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=600&q=80" alt="Wool Suit Detail" class="product-image-hover">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Italian Wool Suit</h3>
+                        <p class="product-category">Men's Suiting</p>
+                        <p class="product-price">$1,250</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">New</span>
+                        <img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?w=600&q=80" alt="Silk Shirt" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1619601030746-7f0650e6f4c6?w=600&q=80" alt="Silk Shirt Detail" class="product-image-hover">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Silk Charmeuse Blouse</h3>
+                        <p class="product-category">Women's Tops</p>
+                        <p class="product-price">$320</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?w=600&q=80" alt="Leather Jacket" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=600&q=80" alt="Leather Jacket Back" class="product-image-hover">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Moto Leather Jacket</h3>
+                        <p class="product-category">Women's Outerwear</p>
+                        <p class="product-price">$785</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <span class="product-badge">Sale</span>
+                        <img src="https://images.unsplash.com/photo-1584370848010-d7fe6bc767ec?w=600&q=80" alt="Handbag" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80" alt="Handbag Detail" class="product-image-hover">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Structured Leather Bag</h3>
+                        <p class="product-category">Accessories</p>
+                        <p class="product-price">$425</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="https://images.unsplash.com/photo-1533227268428-f9ed0900fb3b?w=600&q=80" alt="Oxford Shoes" class="product-image">
+                        <img src="https://images.unsplash.com/photo-1614252369475-531eba835eb1?w=600&q=80" alt="Oxford Shoes Detail" class="product-image-hover">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Oxford Shoes</h3>
+                        <p class="product-category">Men's Footwear</p>
+                        <p class="product-price">$395</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <div class="about-hero">
+            <h1>Our Story</h1>
+            <p>Founded in 2020, NOIRE represents a new era of conscious luxury. We believe in creating timeless pieces that transcend fleeting trends, combining traditional craftsmanship with contemporary innovation.</p>
+        </div>
+        
+        <div class="about-story">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=1200&q=80" alt="Our Atelier" class="story-image">
+            <div class="story-content">
+                <h2>Crafted with Precision</h2>
+                <p>Every piece in our collection is meticulously crafted by master artisans who bring decades of experience to their work. We source only the finest materials from sustainable suppliers around the world.</p>
+                <p>Our commitment to quality means we produce limited quantities, ensuring each garment receives the attention it deserves. This approach reduces waste and guarantees exclusivity for our discerning clientele.</p>
+            </div>
+        </div>
+        
+        <div class="about-story">
+            <div class="story-content">
+                <h2>Sustainable Luxury</h2>
+                <p>We believe luxury and sustainability are not mutually exclusive. Our entire supply chain is designed with environmental responsibility in mind, from fabric selection to packaging.</p>
+                <p>By partnering with certified sustainable mills and implementing circular design principles, we're creating fashion that respects both people and planet.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1558769132-cb1aea3c8908?w=1200&q=80" alt="Sustainable Fashion" class="story-image">
+        </div>
+
+        <section class="values">
+            <div class="section-header">
+                <p class="section-subtitle">What We Stand For</p>
+                <h2 class="section-title">Our Values</h2>
+            </div>
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon">✦</div>
+                    <h3>Quality</h3>
+                    <p>We never compromise on craftsmanship. Each piece is made to last generations, not seasons.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">✧</div>
+                    <h3>Sustainability</h3>
+                    <p>Environmental responsibility is woven into every decision we make, from design to delivery.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">✶</div>
+                    <h3>Innovation</h3>
+                    <p>We honor tradition while embracing new techniques and technologies that push fashion forward.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h1>Get in Touch</h1>
+                <div class="contact-detail">
+                    <h3>Visit Us</h3>
+                    <p>123 Fashion Avenue<br>New York, NY 10001<br>United States</p>
+                </div>
+                <div class="contact-detail">
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567<br>Mon - Sat: 10am - 8pm EST</p>
+                </div>
+                <div class="contact-detail">
+                    <h3>Email Us</h3>
+                    <p>hello@noire.fashion<br>press@noire.fashion</p>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>NOIRE</h3>
+                <p>Redefining luxury fashion through timeless design, sustainable practices, and uncompromising quality. Every piece tells a story of craftsmanship and conscious creation.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Sale</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Sustainability</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Shipping & Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">Care Instructions</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NOIRE. All rights reserved. Crafted with passion in New York.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
